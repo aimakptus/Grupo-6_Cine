@@ -1,0 +1,198 @@
+/*  ESTILOS GENERALES  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  justify-content: space-between;
+  font-family: "Quicksand", sans-serif;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: url(../IMG/FONDO.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Fondo oscuro para un mejor contraste */
+  padding: 0 20px;
+  font-size: 15px;
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+  background-color: rgba(64, 64, 64, 0.329);
+  backdrop-filter: blur(40px);
+}
+
+
+/* NAVEGACIÓN Y LOGO */
+.nav-menu,
+.nav-logo,
+.nav-buscar,
+.nav-login {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  gap: 20px;
+}
+
+.icon-menu {
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icon-menu:hover {
+  color: #87cefa;
+}
+
+.nav-logo {
+  background-color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.nav-buscar input {
+  padding: 10px;
+  width: 100%;
+  /* Ajustado el largo del input */
+  border-radius: 8px;
+  border: 2px solid lightgray;
+  font-size: 18px;
+  /* Texto más grande */
+}
+
+.nav-login button {
+  padding: 10px 20px;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-login button:hover {
+  background-color: #104e8b;
+}
+
+.search input{
+  background-color: #f9f8f850;
+  border-radius: 5px;
+  border: none;
+  width: 400px;
+  height: 25px;
+}
+
+/* bottom de iniciar sesión */
+.iniciar-sesion{
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.iniciar-sesion:hover{
+  color: rgb(0, 0, 0);
+  background-color: aliceblue;
+  transition: 0.5s;
+}
+
+nav {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container {
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  width: 100%;
+}
+
+.container .card img {
+  border-radius: 10px;
+  height: 500px;
+  margin-bottom: 10px;
+}
+
+.container .card {
+  border-radius: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  backdrop-filter: blur(30px);
+  background: linear-gradient(
+    to bottom,
+    rgba(152, 152, 152, 0.403) 0%,
+    rgba(123, 123, 123, 0.293) 100%
+  );
+  margin: 30px;
+  padding: 20px;
+}
+
+/* Menu lateral buttom */
+header button {
+  background-color: none;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+header button:hover{
+  text-shadow: 0px 4px 8px rgb(255, 255, 255);
+  transition: 0.5s;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 10%;
+  width: 100%;
+  background-color: rgba(64, 64, 64, 0.329);
+  backdrop-filter: blur(40px);
+}
+
+footer a:hover {
+  border-bottom: 3px solid white;
+}
+
+footer a {
+  font-size: 20px;
+  color: white;
+
+  text-decoration: none;
+}
+
+/*##############################################*/

@@ -1,0 +1,54 @@
+### Registro de usuario
+POST http://localhost:5000/api/users/register
+Content-Type: application/json
+
+{
+  "fullName": "Julian",
+  "email": "julian@gmail.com",
+  "password": "paquita123"
+}
+
+###
+
+### Inicio de sesión
+POST http://localhost:5000/api/users/login
+Content-Type: application/json
+
+{
+  "email": "julian@gmail.com",
+  "password": "paquita123"
+}
+
+###
+
+### Creación de las películas
+
+POST http://localhost:5000/api/movies
+Content-Type: application/json
+
+{
+  "name": "Deadpool",
+  "director": "Tim Miller",
+  "genre": "comedia"
+}
+
+###
+
+### Crear una función con autenticación
+POST http://localhost:5000/api/functions
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NWExOWE4NjI3MTQwYzg3NDA1ZWM0ZCIsImlhdCI6MTczMzk3NTMyNywiZXhwIjoxNzMzOTc4OTI3fQ.KlezK_eLitCJlxNwafdIr0OyofVt35m717Ik63Bq7m0
+
+{
+  "movie": "675a5ce3e3c0d2578c510444",
+  "room": "IMAX",
+  "seat": "5B",
+  "date": "2024-12-20",
+  "user": "675a19a8627140c87405ec4d"
+}
+
+###
+
+### Obtener todas las funciones con autenticación
+GET http://localhost:5000/api/movies
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NWExOWE4NjI3MTQwYzg3NDA1ZWM0ZCIsImlhdCI6MTczMzk3NjI3NywiZXhwIjoxNzMzOTc5ODc3fQ.vwIrt7K6eWwW5sSB4R_4_hPgPF0LNM2gqQrltkJfLzA
