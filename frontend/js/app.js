@@ -12,7 +12,7 @@ function initializeMovieCards() {
   });
 }
 
-// Función para abrir el modal
+/* // Función para abrir el modal
 function openModal(movie) {
   const modal = document.createElement("div");
   modal.className = "modal";
@@ -39,7 +39,7 @@ function openModal(movie) {
   closeBtn.addEventListener("click", () => {
     document.body.removeChild(modal);
   });
-}
+} */
 
 // Función para alternar la selección de asientos
 function toggleSeat(event) {
